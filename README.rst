@@ -46,7 +46,7 @@ Configuration
 In order for `parsescrapegenerate` to work you must first define a config file.
 This file will define what site to scrape as well as the rules that will be
 used to extract the necessary data. Each site you would like to scrape will
-have its own config file. The files are defined using `YAML <http://yaml.org>`.
+have its own config file. The files are defined using `YAML <http://yaml.org>`_.
 
 .. code-block:: yaml
 
@@ -70,4 +70,4 @@ have its own config file. The files are defined using `YAML <http://yaml.org>`.
 Acknowledgements
 ----------------
 
-`XPath2RSS <https://github.com/jareware/xpath2rss>` - Similar tool written in PHP.
+`XPath2RSS <https://github.com/jareware/xpath2rss>`_ - Similar tool written in PHP.
