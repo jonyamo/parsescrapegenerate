@@ -51,9 +51,10 @@ have its own config file. The files are defined using `YAML <http://yaml.org>`_.
 
 .. code-block:: yaml
 
-    title: "Sample Feed Config"           # Optional. If not set, will attempt to extract from site.
-    lang:  "en"                           # Optional. If not set, will attempt to extract from site.
-    path:  "http://example.com/page.html" # Required. Where to find data to scrape. Can be URL or path to file.
+    title:  "Sample Feed Config"           # Optional. If not set, will attempt to extract from site.
+    lang:   "en"                           # Optional. If not set, will attempt to extract from site.
+    format: "atom"                         # Optional. If not set, will default to RSS.
+    path:   "http://example.com/page.html" # Required. Where to find data to scrape. Can be URL or path to file.
 
     entry:
       templates:                          # Optional. Available keys: title, link, content.
