@@ -4,7 +4,7 @@
 parsescrapegenerate
 ---------------
 
-Main package for ParseScapeFeed
+Main package for ParseScrapeGenerate
 """
 
 __title__   = 'ParseScrapeGenerate'
