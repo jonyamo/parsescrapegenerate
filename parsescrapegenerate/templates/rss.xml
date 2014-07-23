@@ -6,14 +6,14 @@
     <language>{{ feed.lang }}</language>
     <lastBuildDate>{{ feed.updated }}</lastBuildDate>
     <generator>{{ feed.generator }}</generator>
+    {% for entry in feed.entries %}
+    <item>
+      <guid isPermalink="false">{{ entry.id }}</guid>
+      <title>{{ entry.title }}</title>
+      <link>{{ entry.link }}</link>
+      <description>{{ entry.content }}</description>
+      <pubDate>{{ entry.published }}</pubDate>
+    </item>
+    {% endfor %}
   </channel>
-  {% for entry in feed.entries %}
-  <item>
-    <guid isPermalink="false">{{ entry.id }}</guid>
-    <title>{{ entry.title }}</title>
-    <link>{{ entry.link }}</link>
-    <description>{{ entry.content }}</description>
-    <pubDate>{{ entry.published }}</pubDate>
-  </item>
-  {% endfor %}
 </rss>
