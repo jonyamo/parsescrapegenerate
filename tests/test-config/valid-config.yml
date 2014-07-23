@@ -1,0 +1,10 @@
+title: "Sample Feed Config"
+path: "tests/test-main/sample.html"
+entry:
+  templates:
+    link: "http://example.com{{ entry.link }}"
+  xpath:
+    context: "//div[@class='entry']"
+    title: "h2[@class='title']/a/text()"
+    link: "h2[@class='title']/a/@href"
+    content: "div[@class='content']/text()"

@@ -1,0 +1,7 @@
+title: "Test Feed"
+entry:
+  xpath:
+    context: "//div[@class='entry']"
+    title: "h2[@class='entry-title']/text()"
+    link: "h2[@class='entry-title'/a/@href"
+    content: "div[@class='entry-content']/text()"
