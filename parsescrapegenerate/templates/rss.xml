@@ -11,7 +11,7 @@
       <guid isPermalink="false">{{ entry.id }}</guid>
       <title>{{ entry.title }}</title>
       <link>{{ entry.link }}</link>
-      <description>{{ entry.content }}</description>
+      <description><![CDATA[{{ entry.content }}]]></description>
       <pubDate>{{ entry.published }}</pubDate>
     </item>
     {% endfor %}

@@ -10,7 +10,7 @@
     <id>{{ entry.id }}</id>
     <link rel="alternate" href="{{ entry.link }}"/>
     <title>{{ entry.title }}</title>
-    <content>{{ entry.content }}</content>
+    <content><![CDATA[{{ entry.content }}]]></content>
     <published>{{ entry.published }}</published>
   </entry>
   {% endfor %}
