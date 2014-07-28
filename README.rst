@@ -13,6 +13,15 @@ collected the resulting XML data will be written to STDOUT.  Existing XML data
 can be read from STDIN, in which case, all entries will be extracted and added
 to the resulting output (duplicates will be ignored).
 
+Pure Awesome
+------------
+
+ParseScrapeGenerate gives you the ability to create full-content feeds by
+providing a global template function called ``get_content``. When defining your
+entry templates (see Configuration section below) you may use ``get_content``
+with a URL or file path and an optional XPath query and the extracted data will
+be interpolated into the template.
+
 Installation
 ------------
 
@@ -60,7 +69,7 @@ have its own config file. The files are defined using `YAML <http://yaml.org>`_.
       templates:                          # Optional. Available keys: title, link, content.
                                           # Data extracted from below xpath rules will be interpolated using Jinja2.
         link:    "http://example.com{{ entry.link }}"
-        content: "<span title='{{ entry.title }}'>{{ entry.content }}</span>"
+        content: "<span title='{{ entry.title }}'>{{ get_content(entry.link, \"//div[@class='article']\") }}</span>"
 
       xpath:                              # Required if you want to actually extract any data.
                                           # Required keys: context.
