@@ -20,6 +20,7 @@ except:
     from urlparse import urlparse
 
 from . import __title__
+from .exceptions import FeedPathDoesNotExist
 
 def get_clean_html(node):
     if node.__class__.__name__ == 'HtmlElement':

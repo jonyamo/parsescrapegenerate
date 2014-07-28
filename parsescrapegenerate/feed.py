@@ -7,6 +7,7 @@ parsescrapegenerate.feed
 Feed related functions for ParseScrapeGenerate.
 """
 import os
+import requests
 import time
 
 from lxml import html

@@ -69,7 +69,7 @@ have its own config file. The files are defined using `YAML <http://yaml.org>`_.
       templates:                          # Optional. Available keys: title, link, content.
                                           # Data extracted from below xpath rules will be interpolated using Jinja2.
         link:    "http://example.com{{ entry.link }}"
-        content: "<span title='{{ entry.title }}'>{{ get_content(entry.link, \"//div[@class='article']\") }}</span>"
+        content: "{{ get_content('http://example.com{0}'.format(entry.link), '//div[@class=\"article\"]') }}"
 
       xpath:                              # Required if you want to actually extract any data.
                                           # Required keys: context.
