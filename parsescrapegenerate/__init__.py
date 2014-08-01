@@ -8,4 +8,4 @@ Main package for ParseScrapeGenerate
 """
 
 __title__   = 'ParseScrapeGenerate'
-__version__ = '0.2.2'
+__version__ = '0.2.3'

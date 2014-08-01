@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>{{ feed.title }}</title>
-    <link>{{ feed.link }}</link>
+    <link>{{ feed.link|e }}</link>
     <language>{{ feed.lang }}</language>
     <lastBuildDate>{{ feed.updated }}</lastBuildDate>
     <generator>{{ feed.generator }}</generator>
@@ -10,7 +10,7 @@
     <item>
       <guid isPermalink="false">{{ entry.id }}</guid>
       <title>{{ entry.title }}</title>
-      <link>{{ entry.link }}</link>
+      <link>{{ entry.link|e }}</link>
       <description><![CDATA[{{ entry.content }}]]></description>
       <pubDate>{{ entry.published }}</pubDate>
     </item>
