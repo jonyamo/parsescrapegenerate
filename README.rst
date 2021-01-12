@@ -77,6 +77,11 @@ have its own config file. The files are defined using `YAML <http://yaml.org>`_.
         title:   "h2[@class='title']/a/text()"
         link:    "h2[@class='title']/a/@href"
         content: "div[@class='content']"
+        
+See Also
+--------
+
+Pairs great with https://github.com/jonyamo/feedsqueeze!
 
 Acknowledgements
 ----------------
