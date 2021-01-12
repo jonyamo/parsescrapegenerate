@@ -4,17 +4,14 @@ ParseScrapeGenerate
 Generate XML documents using data scraped from HTML documents. In other words:
 *parse*, *scape*, and *generate* XML feeds.
 
-Introduction
-------------
+Description
+-----------
 
 Using site-specific config files, ParseScrapeGenerate will scrape the given
 site looking for entries matching the defined rules. Once all the data is
 collected the resulting XML data will be written to STDOUT.  Existing XML data
 can be read from STDIN, in which case, all entries will be extracted and added
 to the resulting output (duplicates will be ignored).
-
-Pure Awesome
-------------
 
 ParseScrapeGenerate gives you the ability to create full-content feeds by
 providing a global template function called ``get_content``. When defining your
